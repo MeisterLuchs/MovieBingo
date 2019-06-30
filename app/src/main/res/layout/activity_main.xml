@@ -27,6 +27,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/B1"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,6 +40,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/I1"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,6 +53,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/N1"
         app:layout_constraintTop_toTopOf="parent" />
@@ -65,6 +68,7 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -79,6 +83,7 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/B1" />
@@ -91,6 +96,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/B2"
         app:layout_constraintTop_toBottomOf="@+id/I1" />
@@ -103,6 +109,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/I2"
         app:layout_constraintTop_toBottomOf="@+id/N1" />
@@ -115,6 +122,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/N2"
         app:layout_constraintTop_toBottomOf="@+id/G1" />
@@ -129,6 +137,7 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -143,6 +152,7 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/B2" />
@@ -155,7 +165,8 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:text="@string/app_name"
+        android:onClick="tapButton"
+        android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/B3"
         app:layout_constraintTop_toBottomOf="@+id/I2" />
 
@@ -167,6 +178,7 @@
         android:layout_marginLeft="82dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/I3"
         app:layout_constraintTop_toBottomOf="@+id/G2" />
@@ -181,6 +193,7 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -195,6 +208,7 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/B3" />
@@ -207,6 +221,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/B4"
         app:layout_constraintTop_toBottomOf="@+id/I3" />
@@ -219,6 +234,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="82dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/I4"
         app:layout_constraintTop_toBottomOf="@+id/N2" />
@@ -231,6 +247,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/N4"
         app:layout_constraintTop_toBottomOf="@+id/G3" />
@@ -245,6 +262,7 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -259,6 +277,7 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/B4" />
@@ -271,6 +290,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/B5"
         app:layout_constraintTop_toBottomOf="@+id/I4" />
@@ -283,6 +303,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/I5"
         app:layout_constraintTop_toBottomOf="@+id/N4" />
@@ -295,6 +316,7 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/N5"
         app:layout_constraintTop_toBottomOf="@+id/G4" />
@@ -309,6 +331,7 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
+        android:onClick="tapButton"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
