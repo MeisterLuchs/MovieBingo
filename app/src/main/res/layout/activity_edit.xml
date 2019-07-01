@@ -4,62 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".EditActivity">
 
-    <Button
-        android:id="@+id/b1"
+    <EditText
+        android:id="@+id/b1e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="B1"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/i1"
+    <EditText
+        android:id="@+id/i1e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/b1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="I1"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/b1e"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/n1"
+    <EditText
+        android:id="@+id/n1e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/i1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="N1"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/i1e"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/g1"
+    <EditText
+        android:id="@+id/g1e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/n1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="G1"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/n1e"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/o1"
+    <EditText
+        android:id="@+id/o1e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
@@ -68,67 +80,82 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="O1"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/g1"
+        app:layout_constraintStart_toEndOf="@+id/g1e"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/b2"
+    <EditText
+        android:id="@+id/b2e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="B2"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b1" />
+        app:layout_constraintTop_toBottomOf="@+id/b1e" />
 
-    <Button
-        android:id="@+id/i2"
+    <EditText
+        android:id="@+id/i2e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/b2"
-        app:layout_constraintTop_toBottomOf="@+id/i1" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="I2"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/b2e"
+        app:layout_constraintTop_toBottomOf="@+id/i1e" />
 
-    <Button
-        android:id="@+id/n2"
+    <EditText
+        android:id="@+id/n2e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/i2"
-        app:layout_constraintTop_toBottomOf="@+id/n1" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="N2"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/i2e"
+        app:layout_constraintTop_toBottomOf="@+id/n1e" />
 
-    <Button
-        android:id="@+id/g2"
+    <EditText
+        android:id="@+id/g2e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/n2"
-        app:layout_constraintTop_toBottomOf="@+id/g1" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="G2"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/n2e"
+        app:layout_constraintTop_toBottomOf="@+id/g1e" />
 
-    <Button
-        android:id="@+id/o2"
+    <EditText
+        android:id="@+id/o2e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
@@ -137,54 +164,66 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="O2"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/g2"
-        app:layout_constraintTop_toBottomOf="@+id/o1" />
+        app:layout_constraintStart_toEndOf="@+id/g2e"
+        app:layout_constraintTop_toBottomOf="@+id/o1e" />
 
-    <Button
-        android:id="@+id/b3"
+    <EditText
+        android:id="@+id/b3e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="B3"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b2" />
+        app:layout_constraintTop_toBottomOf="@+id/b2e" />
 
-    <Button
-        android:id="@+id/i3"
+    <EditText
+        android:id="@+id/i3e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/b3"
-        app:layout_constraintTop_toBottomOf="@+id/i2" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="I3"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/b3e"
+        app:layout_constraintTop_toBottomOf="@+id/i2e" />
 
-    <Button
-        android:id="@+id/g3"
+    <EditText
+        android:id="@+id/g3e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="82dp"
         android:layout_marginLeft="82dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/i3"
-        app:layout_constraintTop_toBottomOf="@+id/g2" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="G3"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/i3e"
+        app:layout_constraintTop_toBottomOf="@+id/g2e" />
 
-    <Button
-        android:id="@+id/o3"
+    <EditText
+        android:id="@+id/o3e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
@@ -193,67 +232,82 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="O3"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/g3"
-        app:layout_constraintTop_toBottomOf="@+id/o2" />
+        app:layout_constraintStart_toEndOf="@+id/g3e"
+        app:layout_constraintTop_toBottomOf="@+id/o2e" />
 
-    <Button
-        android:id="@+id/b4"
+    <EditText
+        android:id="@+id/b4e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="B4"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b3" />
+        app:layout_constraintTop_toBottomOf="@+id/b3e" />
 
-    <Button
-        android:id="@+id/i4"
+    <EditText
+        android:id="@+id/i4e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/b4"
-        app:layout_constraintTop_toBottomOf="@+id/i3" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="I4"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/b4e"
+        app:layout_constraintTop_toBottomOf="@+id/i3e" />
 
-    <Button
-        android:id="@+id/n4"
+    <EditText
+        android:id="@+id/n4e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="82dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/i4"
-        app:layout_constraintTop_toBottomOf="@+id/n2" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="N4"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/i4e"
+        app:layout_constraintTop_toBottomOf="@+id/n2e" />
 
-    <Button
-        android:id="@+id/g4"
+    <EditText
+        android:id="@+id/g4e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/n4"
-        app:layout_constraintTop_toBottomOf="@+id/g3" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="G4"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/n4e"
+        app:layout_constraintTop_toBottomOf="@+id/g3e" />
 
-    <Button
-        android:id="@+id/o4"
+    <EditText
+        android:id="@+id/o4e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
@@ -262,67 +316,82 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="O4"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/g4"
-        app:layout_constraintTop_toBottomOf="@+id/o3" />
+        app:layout_constraintStart_toEndOf="@+id/g4e"
+        app:layout_constraintTop_toBottomOf="@+id/o3e" />
 
-    <Button
-        android:id="@+id/b5"
+    <EditText
+        android:id="@+id/b5e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="B5"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b4" />
+        app:layout_constraintTop_toBottomOf="@+id/b4e" />
 
-    <Button
-        android:id="@+id/i5"
+    <EditText
+        android:id="@+id/i5e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/b5"
-        app:layout_constraintTop_toBottomOf="@+id/i4" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="I5"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/b5e"
+        app:layout_constraintTop_toBottomOf="@+id/i4e" />
 
-    <Button
-        android:id="@+id/n5"
+    <EditText
+        android:id="@+id/n5e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/i5"
-        app:layout_constraintTop_toBottomOf="@+id/n4" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="N5"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/i5e"
+        app:layout_constraintTop_toBottomOf="@+id/n4e" />
 
-    <Button
-        android:id="@+id/g5"
+    <EditText
+        android:id="@+id/g5e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/n5"
-        app:layout_constraintTop_toBottomOf="@+id/g4" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="G5"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/n5e"
+        app:layout_constraintTop_toBottomOf="@+id/g4e" />
 
-    <Button
-        android:id="@+id/o5"
+    <EditText
+        android:id="@+id/o5e"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
@@ -331,15 +400,18 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
-        android:onClick="tapButton"
-        android:text="Button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="O5"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/g5"
-        app:layout_constraintTop_toBottomOf="@+id/o4" />
+        app:layout_constraintStart_toEndOf="@+id/g5e"
+        app:layout_constraintTop_toBottomOf="@+id/o4e" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/edit"
+        android:id="@+id/accept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -349,6 +421,6 @@
         android:onClick="switchToEdit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/checkbox_on_background" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
