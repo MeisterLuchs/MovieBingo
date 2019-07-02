@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class MainActivity extends AppCompatActivity {
 
     public Button b1;
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     public Button n5;
     public Button g5;
     public Button o5;
+    public JSONObject json;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,37 @@ public class MainActivity extends AppCompatActivity {
         n5 = findViewById(R.id.n5);
         g5 = findViewById(R.id.g5);
         o5 = findViewById(R.id.o5);
+        if (getIntent().getStringExtra("json") != null) {
+            try {
+                json = new JSONObject(getIntent().getStringExtra("json"));
+                b1.setText(json.getString("b1"));
+                i1.setText(json.getString("i1"));
+                n1.setText(json.getString("n1"));
+                g1.setText(json.getString("g1"));
+                o1.setText(json.getString("o1"));
+                b2.setText(json.getString("b2"));
+                i2.setText(json.getString("i2"));
+                n2.setText(json.getString("n2"));
+                g2.setText(json.getString("g2"));
+                o2.setText(json.getString("o2"));
+                b3.setText(json.getString("b3"));
+                i3.setText(json.getString("i3"));
+                g3.setText(json.getString("g3"));
+                o3.setText(json.getString("o3"));
+                b4.setText(json.getString("b4"));
+                i4.setText(json.getString("i4"));
+                n4.setText(json.getString("n4"));
+                g4.setText(json.getString("g4"));
+                o4.setText(json.getString("o4"));
+                b5.setText(json.getString("b5"));
+                i5.setText(json.getString("i5"));
+                n5.setText(json.getString("n5"));
+                g5.setText(json.getString("g5"));
+                o5.setText(json.getString("o5"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     // called when button is pressed
@@ -289,10 +324,11 @@ public class MainActivity extends AppCompatActivity {
                 }
         }
     }
-
+    
     // called when edit button is pressed
-    public void switchToEdit(View activity_main) {
+    public void switchToEdit(View activity_edit) {
         Intent editActivity = new Intent(this, EditActivity.class);
         startActivity(editActivity);
+        finish();
     }
 }
