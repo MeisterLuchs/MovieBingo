@@ -3,54 +3,48 @@ package de.meisterluchs.moviebingo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+@SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
 
-    public Button b1;
-    public Button i1;
-    public Button n1;
-    public Button g1;
-    public Button o1;
-    public Button b2;
-    public Button i2;
-    public Button n2;
-    public Button g2;
-    public Button o2;
-    public Button b3;
-    public Button i3;
-    public Button g3;
-    public Button o3;
-    public Button b4;
-    public Button i4;
-    public Button n4;
-    public Button g4;
-    public Button o4;
-    public Button b5;
-    public Button i5;
-    public Button n5;
-    public Button g5;
-    public Button o5;
-    public JSONObject json;
-    public TextView textView;
-    public String jsonString;
+    private Button b1;
+    private Button i1;
+    private Button n1;
+    private Button g1;
+    private Button o1;
+    private Button b2;
+    private Button i2;
+    private Button n2;
+    private Button g2;
+    private Button o2;
+    private Button b3;
+    private Button i3;
+    private Button g3;
+    private Button o3;
+    private Button b4;
+    private Button i4;
+    private Button n4;
+    private Button g4;
+    private Button o4;
+    private Button b5;
+    private Button i5;
+    private Button n5;
+    private Button g5;
+    private Button o5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,94 +74,84 @@ public class MainActivity extends AppCompatActivity {
         n5 = findViewById(R.id.n5);
         g5 = findViewById(R.id.g5);
         o5 = findViewById(R.id.o5);
-        textView = findViewById(R.id.textView);
-/*
-        FileInputStream fileInputStream = null;
+
+        String jsonString = null;
+        JSONObject json = null;
+        boolean load = false;
         try {
-            fileInputStream = new FileInputStream(new File("current.json"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append(inputStreamReader.read());
-            fileInputStream.close();
-            inputStreamReader.close();
-            jsonString = stringBuilder.toString();
-        } catch (IOException e) {
-            e.printStackTrace();
+            jsonString = readBoard();
+            load = true;
         } catch (NullPointerException e) {
-            e.printStackTrace();
+            Toast.makeText(this, "Welcome to Movie Bingo!", Toast.LENGTH_SHORT).show();
         }
-*/
-        if (savedInstanceState != null) {
+
+        if (load) {
             try {
-                json = new JSONObject("jsonString");
-                textView.setText("1");
+                json = new JSONObject(jsonString);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        }
-        else if (getIntent().getStringExtra("json") != null) {
             try {
-                json = new JSONObject(getIntent().getStringExtra("json"));
-                textView.setText("2");
+                b1.setText(json.getString("b1"));
+                i1.setText(json.getString("i1"));
+                n1.setText(json.getString("n1"));
+                g1.setText(json.getString("g1"));
+                o1.setText(json.getString("o1"));
+                b2.setText(json.getString("b2"));
+                i2.setText(json.getString("i2"));
+                n2.setText(json.getString("n2"));
+                g2.setText(json.getString("g2"));
+                o2.setText(json.getString("o2"));
+                b3.setText(json.getString("b3"));
+                i3.setText(json.getString("i3"));
+                g3.setText(json.getString("g3"));
+                o3.setText(json.getString("o3"));
+                b4.setText(json.getString("b4"));
+                i4.setText(json.getString("i4"));
+                n4.setText(json.getString("n4"));
+                g4.setText(json.getString("g4"));
+                o4.setText(json.getString("o4"));
+                b5.setText(json.getString("b5"));
+                i5.setText(json.getString("i5"));
+                n5.setText(json.getString("n5"));
+                g5.setText(json.getString("g5"));
+                o5.setText(json.getString("o5"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        }
-        else {
-            textView.setText("3");
-            return;
-        }
-        try {
-            b1.setText(json.getString("b1"));
-            i1.setText(json.getString("i1"));
-            n1.setText(json.getString("n1"));
-            g1.setText(json.getString("g1"));
-            o1.setText(json.getString("o1"));
-            b2.setText(json.getString("b2"));
-            i2.setText(json.getString("i2"));
-            n2.setText(json.getString("n2"));
-            g2.setText(json.getString("g2"));
-            o2.setText(json.getString("o2"));
-            b3.setText(json.getString("b3"));
-            i3.setText(json.getString("i3"));
-            g3.setText(json.getString("g3"));
-            o3.setText(json.getString("o3"));
-            b4.setText(json.getString("b4"));
-            i4.setText(json.getString("i4"));
-            n4.setText(json.getString("n4"));
-            g4.setText(json.getString("g4"));
-            o4.setText(json.getString("o4"));
-            b5.setText(json.getString("b5"));
-            i5.setText(json.getString("i5"));
-            n5.setText(json.getString("n5"));
-            g5.setText(json.getString("g5"));
-            o5.setText(json.getString("o5"));
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
         if (json != null) {
             jsonString = json.toString();
-            FileOutputStream outputStream = null;
-            try {
-                outputStream = getApplicationContext().openFileOutput("current.json", 0);
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-            try {
-                outputStream.write(jsonString.getBytes());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
-        textView.setText(jsonString);
+    }
+
+    private String readBoard() {
+        FileInputStream fIn = null;
+        char[] inputBuffer = new char[255];
+        String data = null;
+        try {
+            fIn = openFileInput("current.json");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        InputStreamReader isr = new InputStreamReader(fIn);
+        try {
+            isr.read(inputBuffer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        data = new String(inputBuffer);
+        try {
+            isr.close();
+            fIn.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return data;
     }
 
     // called when button is pressed
-    public void tapButton(View activity_main) {
+    protected void tapButton(View activity_main) {
         ColorDrawable buttonColor;
         int colorId;
         switch (activity_main.getId()) {
@@ -418,6 +402,5 @@ public class MainActivity extends AppCompatActivity {
     public void switchToEdit(View activity_edit) {
         Intent editActivity = new Intent(this, EditActivity.class);
         startActivity(editActivity);
-        finish();
     }
 }

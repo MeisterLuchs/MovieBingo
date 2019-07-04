@@ -15,7 +15,7 @@
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="cringe moment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +28,7 @@
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="dad joke"
         app:layout_constraintStart_toEndOf="@+id/b1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +41,7 @@
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="kiss"
         app:layout_constraintStart_toEndOf="@+id/i1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,7 +54,7 @@
         android:layout_marginTop="100dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="death"
         app:layout_constraintStart_toEndOf="@+id/n1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,7 +69,7 @@
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="&quot;it&apos;s complicated&quot;"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/g1"
@@ -84,7 +84,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="&quot;I&apos;m sorry&quot;"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b1" />
 
@@ -97,7 +97,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="fight between siblings"
         app:layout_constraintStart_toEndOf="@+id/b2"
         app:layout_constraintTop_toBottomOf="@+id/i1" />
 
@@ -110,7 +110,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="fart"
         app:layout_constraintStart_toEndOf="@+id/i2"
         app:layout_constraintTop_toBottomOf="@+id/n1" />
 
@@ -123,7 +123,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="LGBTQ+"
         app:layout_constraintStart_toEndOf="@+id/n2"
         app:layout_constraintTop_toBottomOf="@+id/g1" />
 
@@ -138,7 +138,7 @@
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="politics"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/g2"
@@ -153,7 +153,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="flashback"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b2" />
 
@@ -166,7 +166,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="sports"
         app:layout_constraintStart_toEndOf="@+id/b3"
         app:layout_constraintTop_toBottomOf="@+id/i2" />
 
@@ -179,7 +179,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="competition"
         app:layout_constraintStart_toEndOf="@+id/i3"
         app:layout_constraintTop_toBottomOf="@+id/g2" />
 
@@ -194,7 +194,7 @@
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="family meeting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/g3"
@@ -209,7 +209,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="falling in love"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b3" />
 
@@ -222,7 +222,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="making fun of s/o"
         app:layout_constraintStart_toEndOf="@+id/b4"
         app:layout_constraintTop_toBottomOf="@+id/i3" />
 
@@ -235,7 +235,7 @@
         android:layout_marginTop="82dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="&quot;I don&apos;t understand&quot;"
         app:layout_constraintStart_toEndOf="@+id/i4"
         app:layout_constraintTop_toBottomOf="@+id/n2" />
 
@@ -248,7 +248,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="&quot;what?&quot;"
         app:layout_constraintStart_toEndOf="@+id/n4"
         app:layout_constraintTop_toBottomOf="@+id/g3" />
 
@@ -263,7 +263,7 @@
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="feminism"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/g4"
@@ -278,7 +278,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="kid crying"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b4" />
 
@@ -291,7 +291,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="racism"
         app:layout_constraintStart_toEndOf="@+id/b5"
         app:layout_constraintTop_toBottomOf="@+id/i4" />
 
@@ -304,7 +304,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="happy end"
         app:layout_constraintStart_toEndOf="@+id/i5"
         app:layout_constraintTop_toBottomOf="@+id/n4" />
 
@@ -317,7 +317,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="kid laughing"
         app:layout_constraintStart_toEndOf="@+id/n5"
         app:layout_constraintTop_toBottomOf="@+id/g4" />
 
@@ -332,7 +332,7 @@
         android:layout_marginRight="3dp"
         android:background="@android:color/darker_gray"
         android:onClick="tapButton"
-        android:text="Button"
+        android:text="birthday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/g5"
@@ -346,19 +346,10 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
+        android:focusable="auto"
         android:onClick="switchToEdit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="391dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="520dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

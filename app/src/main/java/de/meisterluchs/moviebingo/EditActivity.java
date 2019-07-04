@@ -6,36 +6,43 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+
+@SuppressWarnings("ALL")
 public class EditActivity extends AppCompatActivity {
 
-    public TextView b1e;
-    public TextView i1e;
-    public TextView n1e;
-    public TextView g1e;
-    public TextView o1e;
-    public TextView b2e;
-    public TextView i2e;
-    public TextView n2e;
-    public TextView g2e;
-    public TextView o2e;
-    public TextView b3e;
-    public TextView i3e;
-    public TextView g3e;
-    public TextView o3e;
-    public TextView b4e;
-    public TextView i4e;
-    public TextView n4e;
-    public TextView g4e;
-    public TextView o4e;
-    public TextView b5e;
-    public TextView i5e;
-    public TextView n5e;
-    public TextView g5e;
-    public TextView o5e;
+    private TextView b1e;
+    private TextView i1e;
+    private TextView n1e;
+    private TextView g1e;
+    private TextView o1e;
+    private TextView b2e;
+    private TextView i2e;
+    private TextView n2e;
+    private TextView g2e;
+    private TextView o2e;
+    private TextView b3e;
+    private TextView i3e;
+    private TextView g3e;
+    private TextView o3e;
+    private TextView b4e;
+    private TextView i4e;
+    private TextView n4e;
+    private TextView g4e;
+    private TextView o4e;
+    private TextView b5e;
+    private TextView i5e;
+    private TextView n5e;
+    private TextView g5e;
+    private TextView o5e;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +74,7 @@ public class EditActivity extends AppCompatActivity {
         o5e = findViewById(R.id.o5e);
     }
 
-    public JSONObject createJSON() throws JSONException {
+    private JSONObject createJSON() throws JSONException {
         JSONObject json = new JSONObject();
         json.put("b1", b1e.getText());
         json.put("i1", i1e.getText());
@@ -96,10 +103,36 @@ public class EditActivity extends AppCompatActivity {
         return json;
     }
 
+    private void writeBoard(String data) {
+        FileOutputStream fOut = null;
+        OutputStreamWriter osw = null;
+        try {
+            fOut = openFileOutput("current.json",0);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        osw = new OutputStreamWriter(fOut);
+        try {
+            osw.write(data);
+            osw.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Toast.makeText(this, "gespeichert", Toast.LENGTH_SHORT).show();
+        try {
+            osw.close();
+            fOut.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     // called when edit button is pressed
     public void switchToMain(View activity_main) throws JSONException {
+        String jsonString = createJSON().toString();
+        writeBoard(jsonString);
         Intent mainActivity = new Intent(this, MainActivity.class);
-        mainActivity.putExtra("json", createJSON().toString());
+        mainActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainActivity);
         finish();
         }
