@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // called when button is pressed
-    protected void tapButton(View activity_main) {
+    public void tapButton(View activity_main) {
         ColorDrawable buttonColor;
         int colorId;
         switch (activity_main.getId()) {
