@@ -1,0 +1,26 @@
+<resources>
+    <string name="b1def">cringe moment</string>
+    <string name="i1def">dad joke</string>
+    <string name="n1def">kiss</string>
+    <string name="g1def">death</string>
+    <string name="o1def">\"it\'s complicated\"</string>
+    <string name="b2def">\"I\'m sorry\"</string>
+    <string name="i2def">fight between siblings</string>
+    <string name="n2def">fart</string>
+    <string name="g2def">LGBTQ+</string>
+    <string name="o2def">politics</string>
+    <string name="b3def">flashback</string>
+    <string name="i3def">sports</string>
+    <string name="g3def">competition</string>
+    <string name="o3def">family meeting</string>
+    <string name="b4def">falling in love</string>
+    <string name="i4def">making fun of s/o</string>
+    <string name="n4def">\"I don\'t understand\"</string>
+    <string name="g4def">\"What?\"</string>
+    <string name="o4def">feminism</string>
+    <string name="b5def">kid crying</string>
+    <string name="i5def">racism</string>
+    <string name="n5def">happy end</string>
+    <string name="g5def">kid laughing</string>
+    <string name="o5def">birthday</string>
+</resources>

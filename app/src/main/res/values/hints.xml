@@ -1,0 +1,26 @@
+<resources>
+    <string name="b1hint">B1</string>
+    <string name="i1hint">I1</string>
+    <string name="n1hint">N1</string>
+    <string name="g1hint">G1</string>
+    <string name="o1hint">O1</string>
+    <string name="b2hint">B2</string>
+    <string name="i2hint">I2</string>
+    <string name="n2hint">N2</string>
+    <string name="g2hint">G2</string>
+    <string name="o2hint">O2</string>
+    <string name="b3hint">B3</string>
+    <string name="i3hint">I3</string>
+    <string name="g3hint">G3</string>
+    <string name="o3hint">O3</string>
+    <string name="b4hint">B4</string>
+    <string name="i4hint">I4</string>
+    <string name="n4hint">N4</string>
+    <string name="g4hint">G4</string>
+    <string name="o4hint">O4</string>
+    <string name="b5hint">B5</string>
+    <string name="i5hint">I5</string>
+    <string name="n5hint">N5</string>
+    <string name="g5hint">G5</string>
+    <string name="o5hint">O5</string>
+</resources>

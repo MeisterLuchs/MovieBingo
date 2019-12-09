@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +32,7 @@ public class EditActivity extends AppCompatActivity {
     private TextView o2e;
     private TextView b3e;
     private TextView i3e;
+    private TextView n3e;
     private TextView g3e;
     private TextView o3e;
     private TextView b4e;
@@ -48,6 +50,11 @@ public class EditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int buttonSize = (metrics.widthPixels - 24) / 5;
+
         b1e = findViewById(R.id.b1e);
         i1e = findViewById(R.id.i1e);
         n1e = findViewById(R.id.n1e);
@@ -60,6 +67,7 @@ public class EditActivity extends AppCompatActivity {
         o2e = findViewById(R.id.o2e);
         b3e = findViewById(R.id.b3e);
         i3e = findViewById(R.id.i3e);
+        n3e = findViewById(R.id.n3e);
         g3e = findViewById(R.id.g3e);
         o3e = findViewById(R.id.o3e);
         b4e = findViewById(R.id.b4e);
@@ -72,6 +80,110 @@ public class EditActivity extends AppCompatActivity {
         n5e = findViewById(R.id.n5e);
         g5e = findViewById(R.id.g5e);
         o5e = findViewById(R.id.o5e);
+
+        b1e.setMinimumWidth(0);
+        i1e.setMinimumWidth(0);
+        n1e.setMinimumWidth(0);
+        g1e.setMinimumWidth(0);
+        o1e.setMinimumWidth(0);
+        b2e.setMinimumWidth(0);
+        i2e.setMinimumWidth(0);
+        n2e.setMinimumWidth(0);
+        g2e.setMinimumWidth(0);
+        o2e.setMinimumWidth(0);
+        b3e.setMinimumWidth(0);
+        i3e.setMinimumWidth(0);
+        n3e.setMinimumWidth(0);
+        g3e.setMinimumWidth(0);
+        o3e.setMinimumWidth(0);
+        b4e.setMinimumWidth(0);
+        i4e.setMinimumWidth(0);
+        n4e.setMinimumWidth(0);
+        g4e.setMinimumWidth(0);
+        o4e.setMinimumWidth(0);
+        b5e.setMinimumWidth(0);
+        i5e.setMinimumWidth(0);
+        n5e.setMinimumWidth(0);
+        g5e.setMinimumWidth(0);
+        o5e.setMinimumWidth(0);
+
+        b1e.setMinimumHeight(0);
+        i1e.setMinimumHeight(0);
+        n1e.setMinimumHeight(0);
+        g1e.setMinimumHeight(0);
+        o1e.setMinimumHeight(0);
+        b2e.setMinimumHeight(0);
+        i2e.setMinimumHeight(0);
+        n2e.setMinimumHeight(0);
+        g2e.setMinimumHeight(0);
+        o2e.setMinimumHeight(0);
+        b3e.setMinimumHeight(0);
+        i3e.setMinimumHeight(0);
+        n3e.setMinimumHeight(0);
+        g3e.setMinimumHeight(0);
+        o3e.setMinimumHeight(0);
+        b4e.setMinimumHeight(0);
+        i4e.setMinimumHeight(0);
+        n4e.setMinimumHeight(0);
+        g4e.setMinimumHeight(0);
+        o4e.setMinimumHeight(0);
+        b5e.setMinimumHeight(0);
+        i5e.setMinimumHeight(0);
+        n5e.setMinimumHeight(0);
+        g5e.setMinimumHeight(0);
+        o5e.setMinimumHeight(0);
+
+        b1e.setWidth(buttonSize);
+        i1e.setWidth(buttonSize);
+        n1e.setWidth(buttonSize);
+        g1e.setWidth(buttonSize);
+        o1e.setWidth(buttonSize);
+        b2e.setWidth(buttonSize);
+        i2e.setWidth(buttonSize);
+        n2e.setWidth(buttonSize);
+        g2e.setWidth(buttonSize);
+        o2e.setWidth(buttonSize);
+        b3e.setWidth(buttonSize);
+        i3e.setWidth(buttonSize);
+        n3e.setWidth(buttonSize);
+        g3e.setWidth(buttonSize);
+        o3e.setWidth(buttonSize);
+        b4e.setWidth(buttonSize);
+        i4e.setWidth(buttonSize);
+        n4e.setWidth(buttonSize);
+        g4e.setWidth(buttonSize);
+        o4e.setWidth(buttonSize);
+        b5e.setWidth(buttonSize);
+        i5e.setWidth(buttonSize);
+        n5e.setWidth(buttonSize);
+        g5e.setWidth(buttonSize);
+        o5e.setWidth(buttonSize);
+
+        b1e.setHeight(buttonSize);
+        i1e.setHeight(buttonSize);
+        n1e.setHeight(buttonSize);
+        g1e.setHeight(buttonSize);
+        o1e.setHeight(buttonSize);
+        b2e.setHeight(buttonSize);
+        i2e.setHeight(buttonSize);
+        n2e.setHeight(buttonSize);
+        g2e.setHeight(buttonSize);
+        o2e.setHeight(buttonSize);
+        b3e.setHeight(buttonSize);
+        i3e.setHeight(buttonSize);
+        n3e.setHeight(buttonSize);
+        g3e.setHeight(buttonSize);
+        o3e.setHeight(buttonSize);
+        b4e.setHeight(buttonSize);
+        i4e.setHeight(buttonSize);
+        n4e.setHeight(buttonSize);
+        g4e.setHeight(buttonSize);
+        o4e.setHeight(buttonSize);
+        b5e.setHeight(buttonSize);
+        i5e.setHeight(buttonSize);
+        n5e.setHeight(buttonSize);
+        g5e.setHeight(buttonSize);
+        o5e.setHeight(buttonSize);
     }
 
     private JSONObject createJSON() throws JSONException {
@@ -136,4 +248,32 @@ public class EditActivity extends AppCompatActivity {
         startActivity(mainActivity);
         finish();
         }
+
+    public void resetBoard(View activity_edit) {
+        b1e.setText(R.string.b1def);
+        i1e.setText(R.string.i1def);
+        n1e.setText(R.string.n1def);
+        g1e.setText(R.string.g1def);
+        o1e.setText(R.string.o1def);
+        b2e.setText(R.string.b2def);
+        i2e.setText(R.string.i2def);
+        n2e.setText(R.string.n2def);
+        g2e.setText(R.string.g2def);
+        o2e.setText(R.string.o2def);
+        b3e.setText(R.string.b3def);
+        i3e.setText(R.string.i3def);
+        g3e.setText(R.string.g3def);
+        o3e.setText(R.string.o3def);
+        b4e.setText(R.string.b4def);
+        i4e.setText(R.string.i4def);
+        n4e.setText(R.string.n4def);
+        g4e.setText(R.string.g4def);
+        o4e.setText(R.string.o4def);
+        b5e.setText(R.string.b5def);
+        i5e.setText(R.string.i5def);
+        n5e.setText(R.string.n5def);
+        g5e.setText(R.string.g5def);
+        o5e.setText(R.string.o5def);
+
+    }
 }
